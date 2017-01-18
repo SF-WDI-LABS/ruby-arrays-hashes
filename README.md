@@ -12,17 +12,19 @@
 
 - Recall the differences between use-cases and definitions for arrays & hashes
 - Name the equivalent of a hash in JS
-- Iterate on, get information out of, and put information into arrays & JS objects
+- Iterate on, get information out of, and put information into arrays and objects in JavaScript
 
 ## Intro (5 mins)
 
-Because you'll be using arrays & hashes so, so much in your time as a developer, we want to get you up to speed with how to work with them.
+Because you'll be using arrays & hashes so much in your time as a developer, we want to get you up to speed with how to work with them.
 
 For these Ruby data collections, you'll be reminded of similar ideas in JS. That's fantastic. Anytime you can draw on that connection to help yourself guess at what methods might exist, or even just what to Google, you'll be in good shape.
 
-## Working with Arrays - Demo (20 mins)
+## Working with Arrays
 
-Just as a refresher – what are arrays for? What do they do? **They're for holding a collection of values**, that's it.
+Just as a refresher – what are arrays for? What do they do? 
+
+**They're for holding a collection of values**, that's it.
 
 #### Making Arrays, Adding to Arrays
 
@@ -78,11 +80,11 @@ numbers.sort # [1,2,3,4,5]
 numbers.sort.reverse # => [5, 4, 3, 2, 1]
 ```
 
-#### You'll be trying this soon, but first – iterating!
+#### Also – iterating!
 
 Now the good stuff – looping through our array and doing something with each value.
 
-**How did we iterate over an array in JS?** It was pretty convoluted:
+**How did we iterate over an array in JS?** Usually like this:
 
 ```js
 for (var i = 0; i < numbers.length; i++) {
@@ -90,7 +92,7 @@ for (var i = 0; i < numbers.length; i++) {
 };
 ```
 
-We can do for loops in Ruby, too, but we've got something _much_ nicer:
+We *can* do for loops in Ruby, too, but we've got something _much_ nicer:
 
 ```ruby
 numbers.each do |number|
@@ -107,9 +109,9 @@ end
 
 Isn't that just so incredibly readable?
 
-#### Extra Detail: Dem Blocks Tho!
+#### Extra Detail: Blocks Tho!
 
-That `do`/`end` thing you're messing with is called a _block_, and it just runs the code in between, almost like a little function without a name - like anonymous functions in JavaScript or lambdas in Python.
+That `do`/`end` thing you're using is called a _block_, and it just runs the code in between, almost like a little function without a name - like anonymous functions in JavaScript.
 
 You'll see blocks all the time, and you'll use `.each` like it's your job. It just loops through each value in your array and assigns a local variable (that you decide) to each object. You come up with what you want it called in the "pipes", aka those tall neighbors surrounding the variable: `|a_variable_of_my_choosing|`.
 
@@ -140,7 +142,7 @@ Oh, and for best practice, always try to name`|a_variable_of_my_choosing|` the s
 
 Of course, the beauty of loops is that we don't have to write all that out.
 
-And a bonus tip: `do`/`end` is functionally the same as `{`/`}`, so you'll see both. The curly braces are for when you want to keep it on one line, but it does not matter.
+And a bonus tip: `do`/`end` is functionally the same as `{`/`}`, so you'll see both. The curly braces are for when you want to keep it on one line, but you can always use `do`/`end`.
 ```ruby
 # totally the same
 numbers.each do |number|
@@ -151,9 +153,9 @@ end
 numbers.each {|number| puts "i am number #{number}"}
 ```
 
-## Arrays - Independent Practice (10 minutes)
+## Arrays - Practice
 
-Alright, practice time. Quick solo challenge, we'll be setting a timer for 10 minutes!
+Alright, practice time. Quick solo challenge. Set a timer for 10 minutes!
 
 - Given the following list of student names, **iterate over them**, **prepending** "A+ " if their name includes an "A" in it. Make a new array if you need to
 - Then, **sort the students** so that A+ students come first
@@ -164,7 +166,7 @@ Alright, practice time. Quick solo challenge, we'll be setting a timer for 10 mi
 students = ['Suzy', 'Daniel', 'James', 'Mary', 'Phillip', 'Siegfried']
 ```
 
-## You're Ready to Move On to Hashes - Codealong (20 mins)
+## Hashes 
 
 We use hashes constantly. Hashes, like JS objects, are a great way to store related data of all different kinds, in a way that's super readable.
 
@@ -266,17 +268,17 @@ fan.delete :color
 # remember, parentheses are optional!
 ```
 
-## Hashes - Independent Practice (10 minutes)
+## Hashes - Practice 
 Now you try it!
 
-- Partner up! Together and **by hand with markers on the desk**, describe your computer as a hash. Use any data types you can think of, cuz hash values can be anything!
-- When you're done, each of you, independently **open your computer, write it out in IRB**. Try getting each key out, adding in new ones, and deleting ones just for fun.
+- **By hand with markers on the desk or in a notebook**, describe your computer as a hash. Use any data types you can think of, because hash values can be anything (except functions)!
+- When you're done, **open your computer, and write your hash out in PRY**. Try getting each key out, adding in new ones, and deleting ones just for fun.
 - In your hashes, try to:
   - Include one key value with the value as an array
   - Include one key value with the value as another hash (look to the fan hash from earlier!)
 - Remember, use the "new way" of creating hashes, if you remember how!
 
-## Conclusion (5 mins)
+## Review
 
 - How do you get the 4th item of an array?
 - How do you get a value out of a hash?

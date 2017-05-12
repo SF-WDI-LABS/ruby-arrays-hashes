@@ -14,7 +14,7 @@
 - Name the equivalent of a hash in JS
 - Iterate on, get information out of, and put information into arrays and objects in JavaScript
 
-## Intro (5 mins)
+## Intro 
 
 Because you'll be using arrays & hashes so much in your time as a developer, we want to get you up to speed with how to work with them.
 
